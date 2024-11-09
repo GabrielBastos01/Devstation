@@ -1,0 +1,28 @@
+/* custom-reset.scss */
+$base-font-size: 16px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #1F1F1F;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}

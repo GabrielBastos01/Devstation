@@ -1,0 +1,43 @@
+$primary-color: #1C1C1C;
+$text-color: azure;
+
+.Header {
+    background-color: $primary-color;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    .logo {
+        height: 6em;
+        padding: 1.5em;
+        will-change: filter;
+        transition: filter 300ms;
+
+        &:hover {
+            filter: drop-shadow(0 0 2em #646cffaa);
+            cursor: pointer;
+        }
+    }
+
+    .options {
+        display: flex;
+        list-style-type: none;
+        font-size: 25px;
+        list-style-type: none;
+
+        .option {
+            margin: 35px 10px 0 10px;
+            .link{
+                text-decoration: none;
+                color: $text-color;
+                &:hover { // Aplica o hover direto aqui
+                    filter: drop-shadow(0 0 2em #ffffffaa);
+                    text-decoration: underline; 
+                    cursor: pointer;
+                }
+                
+            }
+            
+        }
+    }
+}
