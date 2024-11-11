@@ -1,48 +1,70 @@
-$primary-color: #D6A5E5;    // Roxo Claro
-$secondary-color: #A76BCF;  // Roxo Médio
-$tertiary-color: #6F2C91;    // Púrpura
-$dark-color: #4B0082;        // Roxo Escuro
-$neon-blue: #00FFFF;         // Azul Neon
+$primary-color: #D6A5E5;
+$secondary-color: #A76BCF;
+$tertiary-color: #6F2C91;
+$dark-color: #4B0082;
+$neon-blue: #00FFFF;
 $dark-blue: #2c3e50;
-$neon-pink: #FF007F;         // Rosa Neon
-$background-color: #1F1F1F;  // Cinza Escuro
-$text-color: azure;           // Cor do texto padrão
-
+$neon-pink: #FF007F;
+$background-color: #1F1F1F;
+$text-color: azure;
 
 .secbackground {
-
-    background-size: cover; /* Faz com que a imagem cubra toda a seção */
-    background-position: center; /* Centraliza a imagem de fundo */
-    display: flex; /* Usa flexbox para alinhar o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    background-color: $background-color;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0; // Adiciona espaçamento vertical em torno da seção para destacar o conteúdo
     
     .dev {
-
-        background-color: rgba(51, 51, 51, 0.9); /* Cor de fundo com opacidade para ver a imagem de fundo */
+        background-color: rgba(51, 51, 51, 0.9);
         color: $text-color;
-        width: 100%; /* Largura responsiva */
-        max-width: 1550px; /* Largura máxima para dispositivos maiores */
-        height: 230px;
+        width: 90%;
+        max-width: 1200px;
         border-radius: 20px;
-        padding: 10px; /* Adicionei padding para dar espaço interno */
-        margin: 20px auto; /* Centraliza o componente na página */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
-        padding: 20px;
+        padding: 30px;
+        margin: 20px auto;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
         .title {
-            font-size: 2.3em; /* Aumentei o tamanho da fonte */
-            text-align: center; /* Centraliza o título */
-            margin-bottom: 15px; /* Espaçamento abaixo do título */
-            color: $text-color; /* Mudança de cor do título para destacar */
-   
+            font-size: 2.3rem;
+            text-align: center;
+            margin-bottom: 15px;
+            color: $primary-color; // Destaque para o título
         }
 
         .text {
-            font-size: 22px; /* Tamanho da fonte ajustado para melhor leitura */
-            line-height: 1.5; /* Espaçamento entre linhas */
-            text-align: justify; /* Justifica o texto */
-            margin: 0; /* Remove margens */
-     
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 0;
+            color: $text-color;
+        }
+    }
+    
+    // Ajustes de responsividade para telas menores
+    @media (max-width: 768px) {
+        .dev {
+            padding: 20px;
+            .title {
+                font-size: 1.8rem;
+            }
+            .text {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .dev {
+            padding: 15px;
+            .title {
+                font-size: 1.6rem;
+            }
+            .text {
+                font-size: 0.9rem;
+            }
         }
     }
 }

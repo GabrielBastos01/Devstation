@@ -2,42 +2,98 @@ $primary-color: #1C1C1C;
 $text-color: azure;
 
 .Header {
-    background-color: $primary-color;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
-    .logo {
-        height: 6em;
-        padding: 1.5em;
-        will-change: filter;
-        transition: filter 300ms;
+  background-color: $primary-color;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.5);
+  position: relative;
 
+  .logoWrapper {
+    display: flex;
+    align-items: center;
+
+    .glitchGif {
+      width: 40px;
+      height: 40px;
+      margin: 0 5px 3px;
+    }
+
+    .logoText {
+      color: $text-color;
+      font-size: 1.3em;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $text-color;
+        text-shadow: 0 0 5px #00FFFF, 0 0 10px #FF007F;
+      }
+    }
+  }
+
+  .options {
+    display: flex;
+    list-style-type: none;
+    font-size: 25px;
+
+    .option {
+      margin: 10px;
+
+      .link {
+        text-decoration: none;
+        color: $text-color;
         &:hover {
-            filter: drop-shadow(0 0 2em #646cffaa);
-            cursor: pointer;
+          filter: drop-shadow(0 0 2em #ffffffaa);
+          text-decoration: underline;
         }
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background: $text-color;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+
+    .Header {
+      background-image: url('./glitch.gif');
+      background-size: cover;
+      background-position: center;
     }
 
     .options {
-        display: flex;
-        list-style-type: none;
-        font-size: 25px;
-        list-style-type: none;
-
-        .option {
-            margin: 35px 10px 0 10px;
-            .link{
-                text-decoration: none;
-                color: $text-color;
-                &:hover { // Aplica o hover direto aqui
-                    filter: drop-shadow(0 0 2em #ffffffaa);
-                    text-decoration: underline; 
-                    cursor: pointer;
-                }
-                
-            }
-            
-        }
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $primary-color;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     }
+
+    .showMenu {
+      display: flex;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
 }
