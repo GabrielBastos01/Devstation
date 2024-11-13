@@ -1,16 +1,15 @@
-$primary-color: #D6A5E5;
+$primary-color: #f7f1f9;
 $secondary-color: #A76BCF;
 $tertiary-color: #6F2C91;
 $dark-color: #4B0082;
 $neon-blue: #00FFFF;
 $dark-blue: #2c3e50;
 $neon-pink: #FF007F;
-$background-color: #1F1F1F;
+$background-color: #232323;
 $text-color: azure;
 
 .secbackground {
-    background-color: $background-color;
-    background-size: cover;
+  
     background-position: center;
     display: flex;
     justify-content: center;
@@ -18,7 +17,7 @@ $text-color: azure;
     padding: 40px 0; // Adiciona espaçamento vertical em torno da seção para destacar o conteúdo
     
     .dev {
-        background-color: rgba(51, 51, 51, 0.9);
+        background-color: $background-color;
         color: $text-color;
         width: 90%;
         max-width: 1200px;
@@ -31,7 +30,7 @@ $text-color: azure;
             font-size: 2.3rem;
             text-align: center;
             margin-bottom: 15px;
-            color: $primary-color; // Destaque para o título
+            color: $text-color; // Destaque para o título
         }
 
         .text {

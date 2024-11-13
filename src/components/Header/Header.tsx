@@ -24,9 +24,7 @@ const Header = () => {
         <li className={styles.option}>
           <Link to="/Devs" className={styles.link}>Programadores</Link>
         </li>
-        <li className={styles.option}>
-          <Link to="/agendamento" className={styles.link}>Agendamento</Link>
-        </li>
+    
         {/* Aqui é onde estamos colocando a opção "Voltar" */}
         <li className={`${styles.option} ${styles.centerOption}`}>
           <Link to="/" className={styles.link}>Voltar</Link>

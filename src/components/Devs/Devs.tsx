@@ -11,7 +11,7 @@ const Devs = () => {
         <p className={styles.skills}>
           Desenvolvedor e designer gráfico com foco nas tecnologias React, TypeScript, SCSS e mobile
           <br />
-          <a href="https://gabrielportfolio.com" target="_blank" rel="noopener noreferrer" className={styles.link}>
+          <a href="https://gabrielbastos01.github.io/profile/index.html" target="_blank" rel="noopener noreferrer" className={styles.link}>
             Confira meu currículo
           </a>
         </p>
