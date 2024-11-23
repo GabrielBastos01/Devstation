@@ -29,19 +29,19 @@ const Projects = () => {
                         <div className={styles.appsContainer}>
                             <div className={styles.card}>
                                 <h3 className={styles.cardTitle}>Aplicativo Mobile</h3>
-                                <img src="001.png" alt="Aplicativo mobile" className={styles.cardImage} />
+                                <img src="https://img.freepik.com/free-vector/mobile-apps-concept-illustration_114360-690.jpg" alt="Aplicativo mobile" className={styles.cardImage} />
                             </div>
                             <div className={styles.card}>
                                 <h3 className={styles.cardTitle}>Site de Vendas</h3>
-                                <img src="003.png" alt="Site de vendas" className={styles.cardImage} />
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/365/040/small_2x/GRAPHIC_DESIGN_SOFTWARE_3-01.jpg" alt="Site de vendas" className={styles.cardImage} />
                             </div>
                             <div className={styles.card}>
                                 <h3 className={styles.cardTitle}>Sistema de Gestão</h3>
-                                <img src="002.png" alt="Sistema de gestão" className={styles.cardImage} />
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/004/578/714/small/web-analysis-programming-system-with-cloud-server-free-vector.jpg" alt="Sistema de gestão" className={styles.cardImage} />
                             </div>
                             <div className={styles.card}>
                                 <h3 className={styles.cardTitle}>Design gráfico</h3>
-                                <img src="002.png" alt="Design gráfico" className={styles.cardImage} />
+                                <img src="https://unblast.com/wp-content/uploads/2020/05/Graphic-Design-Vector-Illustration.jpg" alt="Design gráfico" className={styles.cardImage} />
                             </div>
                         </div>
                     </div>

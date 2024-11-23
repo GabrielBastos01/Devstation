@@ -12,8 +12,8 @@ const Header = () => {
   return (
     <header className={styles.Header}>
       <div className={styles.logoWrapper}>
-        <img src="logo.svg" alt="Animated Logo" className={styles.glitchGif} />
-        <Link to="/" className={styles.logoText}>DevStation</Link>
+        <img src="https://gabrielbastos01.github.io/Devstation/logo.svg" alt="Animated Logo" className={styles.glitchGif} />
+        <Link to="/Devstation" className={styles.logoText}>DevStation</Link>
       </div>
       <div className={styles.hamburger} onClick={toggleMenu}>
         <span></span>
@@ -27,7 +27,7 @@ const Header = () => {
     
         {/* Aqui é onde estamos colocando a opção "Voltar" */}
         <li className={`${styles.option} ${styles.centerOption}`}>
-          <Link to="/" className={styles.link}>Voltar</Link>
+          <Link to="/Devstation" className={styles.link}>Voltar</Link>
         </li>
       </ul>
     </header>
