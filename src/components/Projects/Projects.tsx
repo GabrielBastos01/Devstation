@@ -38,7 +38,7 @@ const Projects = () => {
                             <div className={styles.card}>
                                 <h3 className={styles.cardTitle}>Sistema de Gestão</h3>
                                 <img src="https://static.vecteezy.com/system/resources/thumbnails/004/578/714/small/web-analysis-programming-system-with-cloud-server-free-vector.jpg" alt="Sistema de gestão" className={styles.cardImage} />
-                            </div>
+                            </div> 
                             <div className={styles.card}>
                                 <h3 className={styles.cardTitle}>Design gráfico</h3>
                                 <img src="https://unblast.com/wp-content/uploads/2020/05/Graphic-Design-Vector-Illustration.jpg" alt="Design gráfico" className={styles.cardImage} />
